@@ -3,8 +3,6 @@ const currentPage = document.title;
 
 
 export function generateNavbar() {
-    const header = document.createElement('header');
-
     const nav = document.createElement('nav');
     nav.className = 'navbar navbar-expand-lg bg-success';
 
@@ -87,9 +85,8 @@ export function generateNavbar() {
     containerDiv.appendChild(collapseDiv);
     nav.appendChild(containerDiv);
 
+    const header = document.querySelector('header');
     header.appendChild(nav);
-
-    document.body.appendChild(header);
 }
 
 
