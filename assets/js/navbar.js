@@ -1,3 +1,7 @@
+
+const currentPage = document.title;
+
+
 export function generateNavbar() {
     const header = document.createElement('header');
 
@@ -31,8 +35,8 @@ export function generateNavbar() {
     leftUl.className = 'navbar-nav';
 
     const leftNavItems = [
-        { text: 'Home', href: 'home.html', active: true },
-        { text: 'Profiles', href: 'profile.html', active: false },
+        { text: 'Home', href: 'home.html', active: currentPage === 'Home' },
+        { text: 'Profiles', href: 'profile.html', active: currentPage === 'Profile' },
         { text: 'Reports', href: '#', active: false },
         { text: 'Settings', href: '#', active: false }
     ];
@@ -87,3 +91,5 @@ export function generateNavbar() {
 
     document.body.appendChild(header);
 }
+
+

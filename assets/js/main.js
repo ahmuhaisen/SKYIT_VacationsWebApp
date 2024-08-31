@@ -1,3 +1,5 @@
 import {generateNavbar} from "./navbar.js";
 
-generateNavbar()
+
+generateNavbar();
+
