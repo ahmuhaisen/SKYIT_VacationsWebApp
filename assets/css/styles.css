@@ -8,7 +8,7 @@ p, span {
 
 .nav-item a{
     color: #fff !important;
-    font-size: small;
+    font-size: small !important;
 }
 
 .nav-item a:hover{
@@ -21,10 +21,10 @@ p, span {
 }
 
 .active{
-   font-weight: bolder;
+   font-weight: 700 !important;
 }
 
-.user-hero-card{
+.bg-light{
     background-color: #f6f6f6 !important;
 }
 
@@ -80,4 +80,69 @@ p, span {
     margin: 0 !important;
     font-weight: normal !important;
 
+}
+
+.search-container {
+    width: 300px !important;
+    height: 40px;
+    border: 0.3px solid rgb(142, 141, 141);
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+
+.data-group {
+    margin-top: 10px;
+}
+
+
+.data-group p{
+    font-size: 15px !important;
+    text-align: left;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none !important;
+    color: #198754 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    position: relative;
+}
+
+.arrow {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-left: 1px; 
+}
+
+.link:hover .arrow {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.pagination {
+    background-color: #d3e8de !important;
+    border-radius: 50px !important;
+    padding: 5px;
+}
+
+.page-link{
+    border-radius: 50px !important;
+    background-color: #d3e8de !important;
+    color: #198754;
+}
+.page-link:hover{
+    background-color: #aec8bb !important;
+    color: #198754;
+
+}
+
+.page-item .current {
+    background-color: #ffffff !important;
 }

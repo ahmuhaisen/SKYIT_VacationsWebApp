@@ -19,7 +19,7 @@
 
         <div class="row mt-5">
             <div class="col-md-6">
-                <div class="card user-hero-card bg-body-tertiary shadow border-0 rounded-4 p-3">
+                <div class="card bg-light bg-body-tertiary shadow border-0 rounded-4 p-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex">
                             <div class="me-3">
@@ -27,13 +27,14 @@
                                     height="50">
                             </div>
                             <div>
-                                <p class="m-0 fw-bold">Ahmad Muhaisen</p>
-                                <p class="text-muted m-0">Junior Full Stack Developer</p>
+                                <p class="m-0 fw-bold">Sameer Mohammad</p>
+                                <p class="text-muted m-0">Junior HR Officer</p>
                             </div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-sm border-success bg-white text-success fw-bold">View
-                                Profile</a></a>
+                            <a href="profile.html" class="btn btn-sm border-success bg-white text-success fw-bold">
+                                View Profile
+                            </a>
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -59,7 +60,7 @@
                     <div
                         class="bg-success text-white shadow border-0 rounded-4 p-3 h-100 d-flex justify-content-between">
                         <div class="text-center">
-                            <i class="bi bi-card-checklist hero-large-icon"></i>
+                            <i class="bi bi-person-lines-fill hero-large-icon"></i>
                             <div>
                                 <small class="m-0">Vacation<br>Requests</small>
                             </div>
@@ -95,17 +96,39 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <!-- Indicators -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 0"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                        aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                         aria-label="Slide 3"></button>
                 </div>
 
                 <div class="carousel-inner" style="height: 300px !important;">
+                    <!-- Slide 0 -->
+                    <div class="carousel-item w-100 active">
+                        <img src="assets/images/slider-0.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="w-100 p-0" style="padding: 20px 50px !important;">
+                               
+                                    <h6>ahmuhaisen has published a new API project 🔥</h6>
+                                    <p>
+                                        An ASP.NET 8 Restful API project designed to mimic the basic functionalities of Good Reads
+                                        website!
+                                    </p>
+                                
+                                <a href="https://github.com/ahmuhaisen/GoodReadsClone"
+                                    class="btn btn-sm btn-success mt-2" target="_blank">
+                                    <i class="bi bi-github"></i>
+                                    View Project Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Slide 1 -->
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <img src="assets/images/slider-1.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div>
@@ -121,7 +144,8 @@
                         <div class="carousel-caption d-none d-md-block">
                             <div>
                                 <h6>Human resources management, solutions built for HR professionals</h6>
-                                <p>Our solutions provide you with the necessary tools to meet the modern human resources management requirements.</p>
+                                <p>Our solutions provide you with the necessary tools to meet the modern human resources
+                                    management requirements.</p>
                             </div>
                         </div>
                     </div>
@@ -138,8 +162,35 @@
 
                 </div>
             </div>
-            
 
+
+    </section>
+
+    <section class="container mt-5">
+        <div class="bg-light shadow border-0 rounded-4 py-3 px-5">
+            <div class="d-flex flex-lg-row flex-sm-column justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-person-lines-fill text-success fs-2 me-3"></i>
+                    <span class="section-title text-dark">Vacation Requests</span>
+                </div>
+                <div class="search-container d-flex align-items-center justify-content-between bg-white rounded-5 p-1">
+                    <div class="me-2">
+                        <i class="bi bi-search text-success"></i>
+                    </div>
+                    <input type="text" class="w-100" placeholder="Search...">
+                </div>
+            </div>
+            <hr>
+            <div class="row requests-container">
+                
+            </div>
+            <div class="text-end">
+                <a href="vacation-requests.html" class="link">
+                    View More
+                    <i class="bi bi-chevron-right arrow"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section class="container mt-5">
@@ -149,5 +200,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <script type="module" src="assets/js/main.js"></script>
 </body>
-
 </html>

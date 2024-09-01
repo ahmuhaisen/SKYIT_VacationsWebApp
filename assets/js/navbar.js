@@ -33,7 +33,7 @@ export function generateNavbar() {
     leftUl.className = 'navbar-nav';
 
     const leftNavItems = [
-        { text: 'Home', href: 'home.html', active: currentPage === 'Home' },
+        { text: 'Home', href: 'home.html', active: currentPage === 'Home' || currentPage === 'Vacation Requests' },
         { text: 'Profiles', href: 'profile.html', active: currentPage === 'Profile' },
         { text: 'Reports', href: '#', active: false },
         { text: 'Settings', href: '#', active: false }
