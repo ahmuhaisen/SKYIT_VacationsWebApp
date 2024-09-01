@@ -2,7 +2,7 @@
 const currentPage = document.title;
 
 
-export function generateNavbar() {
+function generateNavbar() {
     const nav = document.createElement('nav');
     nav.className = 'navbar navbar-expand-lg bg-success';
 
@@ -89,4 +89,4 @@ export function generateNavbar() {
     header.appendChild(nav);
 }
 
-
+generateNavbar();
