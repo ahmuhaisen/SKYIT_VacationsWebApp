@@ -3,8 +3,8 @@ import { getPendingRequests } from "./requests-data.js";
 import {createPendingRequestsCards} from "./request-card.js";
 
 const profileSummaryData = {
-    name: "Khaled Al-Rawabdeh",
-    profileImage: "2.jpeg",
+    name: "Omar Al-Khatib",
+    profileImage: "4.jpeg",
     department: "HR Department",
     position: "Junior HR Manager",
     reportingTo: "Ahmad Muhaisen",
@@ -81,21 +81,7 @@ function displayVacationHistory() {
 }
 
 
-function displayPendingRequests() {
-    const pendingRequestsContainer = document.querySelector('#pending-requests-container');
-
-    pendingRequestsContainer.innerHTML = '<p class="text-center">NO PENDING REQUESTS</p>';
-    console.log(getPendingRequests());
-    // pendingRequests.forEach((req) => {
-    //     const col = createVacationCardCol(req);
-    //     pendingRequestsContainer.appendChild(col);
-    // });
-}
-
-
-
 
 displayUserProfileSummaryData();
 displayVacationHistory();
-displayPendingRequests();
-createPendingRequestsCards(getPendingRequests());
+createPendingRequestsCards(getPendingRequests(profileSummaryData.name));

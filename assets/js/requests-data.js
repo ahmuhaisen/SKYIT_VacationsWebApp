@@ -1,6 +1,6 @@
 const vacationRequests = [
   {
-    name: "1 Ahmad Al-Ali",
+    name: "Ahmad Al-Ali",
     profileImage: "2.jpeg",
     submittedOn: "2024-07-01",
     duration: "2024-07-10 - 2024-07-15", 
@@ -9,7 +9,7 @@ const vacationRequests = [
     status: 2, // 0 - Pending, 1 - Approved, 2 - Rejected
   },
   {
-    name: "2 Fatima Al-Hussein",
+    name: "Fatima Al-Hussein",
     profileImage: "1.jpeg",
     submittedOn: "2024-07-05",
     duration: "2024-07-12 - 2024-07-20", 
@@ -18,7 +18,7 @@ const vacationRequests = [
     status: 1,
   },
   {
-    name: "3 Mohammed Al-Farsi",
+    name: "Mohammed Al-Farsi",
     profileImage: "3.jpeg",
     submittedOn: "2024-07-10",
     duration: "2024-07-15 - 2024-07-25", 
@@ -27,25 +27,25 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "4 Layla Al-Mutairi",
+    name: "Layla Al-Mutairi",
     profileImage: "5.jpeg",
-    submittedOn: "2024-07-15",
-    duration: "2024-07-20 - 2024-08-03", 
+    submittedOn: "2024-09-10",
+    duration: "2024-09-10 - 2024-09-13", 
     salary: 45000,
     isSelected: false,
     status: 0,
   },
   {
-    name: "5 Omar Al-Khatib",
+    name: "Omar Al-Khatib",
     profileImage: "4.jpeg",
-    submittedOn: "2024-07-20",
+    submittedOn: "2024-07-25",
     duration: "2024-07-25 - 2024-08-08", 
     salary: 65000,
     isSelected: false,
     status: 0,
   },
   {
-    name: "6 Aisha Al-Jabri",
+    name: "Aisha Al-Jabri",
     profileImage: "5.jpeg",
     submittedOn: "2024-07-25",
     duration: "2024-07-30 - 2024-08-02", 
@@ -54,7 +54,7 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "7 Khalid Al-Mansouri",
+    name: "Khalid Al-Mansouri",
     profileImage: "4.jpeg",
     submittedOn: "2024-07-30",
     duration: "2024-08-01 - 2024-08-21", 
@@ -63,7 +63,16 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "8 Yasmin Al-Tamimi",
+    name: "Omar Al-Khatib",
+    profileImage: "4.jpeg",
+    submittedOn: "2024-9-5",
+    duration: "2024-09-10 - 2024-09-11", 
+    salary: 65000,
+    isSelected: false,
+    status: 0,
+  },
+  {
+    name: "Yasmin Al-Tamimi",
     profileImage: "1.jpeg",
     submittedOn: "2024-08-01",
     duration: "2024-08-05 - 2024-08-25", 
@@ -72,7 +81,7 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "9 Hamza Al-Rashid",
+    name: "Hamza Al-Rashid",
     profileImage: "2.jpeg",
     submittedOn: "2024-08-05",
     duration: "2024-08-10 - 2024-08-24", 
@@ -81,7 +90,16 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "10 Noura Al-Salem",
+    name: "Omar Al-Khatib",
+    profileImage: "4.jpeg",
+    submittedOn: "2024-08-10",
+    duration: "2024-08-22 - 2024-09-09", 
+    salary: 65000,
+    isSelected: false,
+    status: 0,
+  },
+  {
+    name: "Noura Al-Salem",
     profileImage: "5.jpeg",
     submittedOn: "2024-08-10",
     duration: "2024-08-15 - 2024-09-05", 
@@ -90,7 +108,7 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "11 Tarek Al-Omari",
+    name: "Tarek Al-Omari",
     profileImage: "3.jpeg",
     submittedOn: "2024-08-15",
     duration: "2024-08-18 - 2024-08-25", 
@@ -99,7 +117,16 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "12 Amal Al-Haddad",
+    name: "Omar Al-Khatib",
+    profileImage: "4.jpeg",
+    submittedOn: "2024-07-20",
+    duration: "2024-08-10 - 2024-08-12", 
+    salary: 65000,
+    isSelected: false,
+    status: 0,
+  },
+  {
+    name: "Amal Al-Haddad",
     profileImage: "1.jpeg",
     submittedOn: "2024-08-20",
     duration: "2024-08-22 - 2024-09-05", 
@@ -108,7 +135,7 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "13 Youssef Al-Harbi",
+    name: "Youssef Al-Harbi",
     profileImage: "2.jpeg",
     submittedOn: "2024-08-25",
     duration: "2024-08-30 - 2024-09-12", 
@@ -117,7 +144,7 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "14 Rania Al-Dosari",
+    name: "Rania Al-Dosari",
     profileImage: "5.jpeg",
     submittedOn: "2024-08-30",
     duration: "2024-09-01 - 2024-09-15", 
@@ -126,11 +153,20 @@ const vacationRequests = [
     status: 0,
   },
   {
-    name: "15 Sami Al-Najjar",
-    profileImage: "4.jpeg",
+    name: "Mohammad Al-Najjar",
+    profileImage: "1.jpeg",
     submittedOn: "2024-09-01",
     duration: "2024-09-05 - 2024-09-08", 
     salary: 61000,
+    isSelected: false,
+    status: 0,
+  },
+  {
+    name: "Omar Al-Khatib",
+    profileImage: "4.jpeg",
+    submittedOn: "2024-09-2",
+    duration: "2024-09-10 - 2024-09-12", 
+    salary: 65000,
     isSelected: false,
     status: 0,
   },
@@ -177,15 +213,17 @@ function approveRequest(name) {
   console.log(vacationRequests);
 }
 
-function getRequestsRange(from, to) {
+function getRequestsRange(username, from, to) {
   return vacationRequests
-  .sort((a, b) => a.submittedOn.localeCompare(b.submittedOn))
+  .filter(request => username? request.name == username : true)
+  .sort((a, b) => new Date(b.submittedOn) - new Date(a.submittedOn))
   .slice(from, to);
 }
 
-function getPendingRequests() {
+function getPendingRequests(username) {
   return vacationRequests
-  .filter(request => request.status == 0)
+  .filter(request => request.name == username && request.status == 0 )
+  .sort((a, b) => new Date(b.submittedOn) - new Date(a.submittedOn))
   .slice(0, 4);
 }
 

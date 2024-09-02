@@ -99,6 +99,7 @@ function updatePage() {
   updatePager();
   createRequestsCards(
     getRequestsRange(
+      '', 
       (currentPage - 1) * requestPerPage,
       currentPage * requestPerPage
     )
