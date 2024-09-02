@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
 </head>
+
 <body>
     <header></header>
-    <p>Profile</p>
-    
+
+    <section class="container mt-5">
+        <div>
+            <div class="card bg-light bg-body-tertiary shadow border-0 rounded-4 p-3">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="d-flex col-md-7">
+                        <div class="me-3 d-flex align-items-center">
+                            <img src="assets/images/ahmad.jpg" class="user-profile-image rounded-circle" alt="Profile Image" width="60"
+                                height="60">
+                        </div>
+                        <div>
+                            <p class="user-name-text">Sameer Mohammad</p>
+                            <p class="department-text">HR Department</p>
+                            <p class="position-text">Junior HR Officer</p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="profile.html" class="btn btn-sm btn-success fw-bold px-4">
+                            New Request
+                        </a>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between mt-3">
+                    <div class="col-md-auto col-sm-6 d-flex align-items-center">
+                        <i class="bi bi-person-fill text-secondary fs-1 me-3"></i>
+                        <span>
+                            <p class="fw-bold">Reporting To:</p>
+                            <span id="reporting-to"></span>
+                        </span>
+                    </div>
+                    <div class="col-md-auto col-sm-6 d-flex align-items-center">
+                        <i class="bi bi-arrow-up-right-square-fill text-secondary fs-1 me-3"></i>
+                        <span>
+                            <p class="fw-bold">Corporate Level:</p>
+                            <span id="corporate-level"></span>
+                        </span>
+                    </div>
+                    <div class="col-md-auto col-sm-6 d-flex align-items-center">
+                        <i class="bi bi-hourglass-split text-secondary fs-1 me-3"></i>
+                        <span>
+                            <p class="fw-bold">Lifetime:</p>
+                            <span id="lifetime-in-years"></span>
+                        </span>
+                    </div>
+                    <div class="col-md-auto col-sm-6 d-flex align-items-center">
+                        <i class="bi bi-calendar-x-fill text-secondary fs-1 me-3"></i>
+                        <span>
+                            <p class="fw-bold">Vacation Days Left:</p>
+                            <span id="vacation-days-left"></span>
+                        </span>
+                    </div>
+                    <div class="col-md-auto col-sm-6 d-flex align-items-center">
+                        <i class="bi bi-capsule-pill text-secondary fs-1 me-3"></i>
+                        <span>
+                            <p class="fw-bold">Sick Days Left:</p>
+                            <span id="sick-days-left"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="bg-light shadow border-0 rounded-4 px-3 py-2">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-clock-history text-success fs-2 me-3"></i>
+                <p class="section-title">History</p>
+            </div>
+            <hr class="m-0 my-2 text-dark">
+            <div id="vacation-history-container" class="row py-3"></div>
+            <div class="text-end">
+                <a href="vacation-requests.html" class="link">
+                    View More
+                    <i class="bi bi-chevron-right arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="bg-light shadow border-0 rounded-4 px-3 py-2">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-pause-circle text-success fs-2 me-3"></i>
+                <p class="section-title">Pending Requests</p>
+            </div>
+            <hr class="m-0 my-2 text-dark">
+            <div id="pending-requests-container" class="row py-3"></div>
+            <div class="text-end">
+                <a href="vacation-requests.html" class="link">
+                    View More
+                    <i class="bi bi-chevron-right arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5"></section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script type="module" src="assets/js/profile.js"></script>
 </body>
+
 </html>

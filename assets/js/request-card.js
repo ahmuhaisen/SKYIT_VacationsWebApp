@@ -74,6 +74,40 @@ function createCardBody(request) {
   return body;
 }
 
+function createPendingCaredFooter(request) {
+  const footerLabel = createTextElement("p", "text-muted fw-bold", "Currently at:");
+  footerLabel.style.fontSize = "0.8rem";
+  const footerValue = createTextElement("p", "text-success fw-bold", "Omar Ahmad");
+  footerValue.style.fontSize = "1rem";
+
+  const footer = document.createElement("div");
+  footer.className = "text-start mt-5";
+  footer.appendChild(footerLabel);
+  footer.appendChild(footerValue);
+
+  return footer;
+}
+
+function createPendingCardBody(request) {
+  const body = document.createElement("div");
+  body.className = "card-body text-center";
+
+  body.appendChild(createTextElement("h6", "card-title", request.name));
+  body.appendChild(
+    createDataGroup(
+      "Submitted on:",
+      new Date(request.submittedOn).toLocaleDateString()
+    )
+  );
+  body.appendChild(
+    createDataGroup("Duration:", formatDuration(request.duration))
+  );
+
+  body.appendChild(createPendingCaredFooter(request));
+
+  return body;
+}
+
 function createTextElement(tag, className, textContent) {
   const element = document.createElement(tag);
   element.className = className;
@@ -178,5 +212,24 @@ function createRequestsCards(requests) {
   }
 }
 
+function createPendingRequestCard(request) {
+  const cardContainer = createCardContainer();
+  const card = createCard();
 
-export { createRequestCard, createRequestsCards };
+  card.appendChild(createProfileImage(request.profileImage));
+  card.appendChild(createPendingCardBody(request));
+
+  cardContainer.appendChild(card);
+  return cardContainer;
+}
+
+function createPendingRequestsCards(requests) {
+  let requestsContainer = document.querySelector("#pending-requests-container");
+  requestsContainer.innerHTML = "";
+
+  for (const request of requests) {
+    requestsContainer.appendChild(createPendingRequestCard(request));
+  }
+}
+
+export { createRequestCard, createRequestsCards, createPendingRequestsCards };

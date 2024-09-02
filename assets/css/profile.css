@@ -1,0 +1,38 @@
+p {
+    margin: 0px !important;
+}
+
+.user-name-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.department-text {
+    color: #2d3238;
+}
+.position-text{
+    color: #959595;
+}
+
+.history-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.history-card-duration {
+    font-size: 1rem;
+    color: #717171;
+}
+
+.duration-in-days{
+    font-weight: 700;
+}
+
+.approved-by {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #717171;
+    margin-top: 17px !important;
+}

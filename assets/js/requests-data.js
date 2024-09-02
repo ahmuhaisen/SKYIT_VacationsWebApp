@@ -183,9 +183,16 @@ function getRequestsRange(from, to) {
   .slice(from, to);
 }
 
+function getPendingRequests() {
+  return vacationRequests
+  .filter(request => request.status == 0)
+  .slice(0, 4);
+}
+
 export {
   vacationRequests,
   getRequestsRange,
+  getPendingRequests,
   selectAll,
   deselectAll,
   declineRequest,
