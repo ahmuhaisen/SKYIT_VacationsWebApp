@@ -127,7 +127,7 @@ function createDataGroup(label, value) {
   return group;
 }
 
-function formatDuration(duration) {
+function getDurationText(duration) {
   const dates = duration.split(" - ");
   const startDate = new Date(dates[0]);
   const endDate = new Date(dates[1]);
@@ -136,6 +136,14 @@ function formatDuration(duration) {
     durationInDays > 7
       ? `${Math.ceil(durationInDays / 7)} Weeks`
       : `${durationInDays} Days`;
+  return durationText;
+}
+
+function formatDuration(duration) {
+  const dates = duration.split(" - ");
+  const startDate = new Date(dates[0]);
+  const endDate = new Date(dates[1]);
+  const durationText = getDurationText(duration);
 
   return `${durationText} (${startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()})`;
 }
@@ -232,4 +240,4 @@ function createPendingRequestsCards(requests) {
   }
 }
 
-export { createRequestCard, createRequestsCards, createPendingRequestsCards };
+export { createRequestCard, createRequestsCards, createPendingRequestsCards, getDurationText };

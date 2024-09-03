@@ -56,7 +56,7 @@ const vacationRequests = [
   {
     name: "Khalid Al-Mansouri",
     profileImage: "4.jpeg",
-    submittedOn: "2024-07-30",
+    submittedOn: "2019-07-30",
     duration: "2024-08-01 - 2024-08-21", 
     salary: 47000,
     isSelected: false,
@@ -241,6 +241,11 @@ function getUserLeaveRequestsCount(username) {
   .length;
 }
 
+function getRequestsByFilter(filter) {
+  return vacationRequests
+  .filter(request => request.name.search(filter) != -1 || request.submittedOn.search(filter) != -1);
+}
+
 
 export {
   vacationRequests,
@@ -251,5 +256,6 @@ export {
   declineRequest,
   approveRequest,
   getUserVacationRequestsCount,
-  getUserLeaveRequestsCount
+  getUserLeaveRequestsCount,
+  getRequestsByFilter
 };
