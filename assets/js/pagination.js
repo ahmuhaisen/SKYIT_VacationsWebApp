@@ -104,6 +104,8 @@ function updatePage() {
       currentPage * requestPerPage
     )
   );
+
+  window.scrollTo(0, 0);
 }
 
 export { generatePaginator, updatePage };
