@@ -1,18 +1,7 @@
 import { vacationRequestsHistory } from "./requests-history-data.js";
 import { getPendingRequests } from "./requests-data.js";
-import {createPendingRequestsCards} from "./request-card.js";
-
-const profileSummaryData = {
-    name: "Omar Al-Khatib",
-    profileImage: "4.jpeg",
-    department: "HR Department",
-    position: "Junior HR Manager",
-    reportingTo: "Ahmad Muhaisen",
-    corporateLevel: 10,
-    lifetimeInYears: 2.5,
-    vacationDaysLeft: 7,
-    sickDaysLeft: 9
-}
+import { createPendingRequestsCards } from "./request-card.js";
+import {userSummary} from "./user-summary.js";
 
 
 function createVacationCardCol(vacationReq) {
@@ -59,15 +48,15 @@ function createVacationCardCol(vacationReq) {
 }
 
 function displayUserProfileSummaryData() {
-    document.querySelector(".user-name-text").textContent = profileSummaryData.name;
-    document.querySelector(".user-profile-image").src = `assets/images/${profileSummaryData.profileImage}`;
-    document.querySelector(".department-text").textContent = profileSummaryData.department;
-    document.querySelector(".position-text").textContent = profileSummaryData.position;
-    document.querySelector("#reporting-to").textContent = profileSummaryData.reportingTo;
-    document.querySelector("#corporate-level").textContent = `Level ${profileSummaryData.corporateLevel}`;
-    document.querySelector("#lifetime-in-years").textContent = `${profileSummaryData.lifetimeInYears} Years`;
-    document.querySelector("#vacation-days-left").textContent = `${profileSummaryData.vacationDaysLeft} Days`;
-    document.querySelector("#sick-days-left").textContent = `${profileSummaryData.sickDaysLeft} Days`;
+    document.querySelector(".user-name-text").textContent = userSummary.name;
+    document.querySelector(".user-profile-image").src = `assets/images/${userSummary.profileImage}`;
+    document.querySelector(".department-text").textContent = userSummary.department;
+    document.querySelector(".position-text").textContent = userSummary.position;
+    document.querySelector("#reporting-to").textContent = userSummary.reportingTo;
+    document.querySelector("#corporate-level").textContent = `Level ${userSummary.corporateLevel}`;
+    document.querySelector("#lifetime-in-years").textContent = `${userSummary.lifetimeInYears} Years`;
+    document.querySelector("#vacation-days-left").textContent = `${userSummary.vacationDaysLeft} Days`;
+    document.querySelector("#sick-days-left").textContent = `${userSummary.sickDaysLeft} Days`;
 }
 
 
@@ -84,4 +73,4 @@ function displayVacationHistory() {
 
 displayUserProfileSummaryData();
 displayVacationHistory();
-createPendingRequestsCards(getPendingRequests(profileSummaryData.name));
+createPendingRequestsCards(getPendingRequests(userSummary.name));

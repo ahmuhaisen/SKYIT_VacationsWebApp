@@ -172,6 +172,8 @@ const vacationRequests = [
   },
 ];
 
+const leaveRequests = [];
+
 
 function selectAll() {
   for (let i = 0; i < vacationRequests.length; i++) {
@@ -227,6 +229,19 @@ function getPendingRequests(username) {
   .slice(0, 4);
 }
 
+function getUserVacationRequestsCount(username) {
+  return vacationRequests
+  .filter(request => request.name == username)
+  .length;
+}
+
+function getUserLeaveRequestsCount(username) {
+  return leaveRequests
+  .filter(request => request.name == username)
+  .length;
+}
+
+
 export {
   vacationRequests,
   getRequestsRange,
@@ -235,4 +250,6 @@ export {
   deselectAll,
   declineRequest,
   approveRequest,
+  getUserVacationRequestsCount,
+  getUserLeaveRequestsCount
 };

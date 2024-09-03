@@ -14,7 +14,7 @@
 
     <section class="hero container mt-5">
         <div class="d-flex flex-lg-row flex-sm-column justify-content-between">
-            <h4 class="text-dark"> Welcome Back Omar! Here are your latest updates.</h4>
+            <h4 class="text-dark"> Welcome Back <span id="user-short-name" class="h4"></span>! Here are your latest updates.</h4>
             <button href="#" class="btn btn-success btn-sm px-5">New Request</button>
         </div>
 
@@ -24,12 +24,12 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex">
                             <div class="me-3">
-                                <img src="assets/images/4.jpeg" class="rounded-circle" alt="Profile Image" width="50"
+                                <img id="profile-image" class="rounded-circle" alt="Profile Image" width="50"
                                     height="50">
                             </div>
                             <div>
-                                <p class="m-0 fw-bold">Omar Al-Khatib</p>
-                                <p class="text-muted m-0">Junior HR Officer</p>
+                                <p id="user-name" class="m-0 fw-bold"></p>
+                                <p id="user-position" class="text-muted m-0"></p>
                             </div>
                         </div>
                         <div>
@@ -43,14 +43,14 @@
                             <i class="bi bi-person-fill text-secondary fs-1 me-2"></i>
                             <span>
                                 <p class="m-0 fw-bold">Reporting To:</p>
-                                Ahmad Muhaisen
+                                <span id="reporting-to"></span>
                             </span>
                         </div>
                         <div class="col-md-auto col-sm-6 d-flex align-items-center">
                             <i class="bi bi-arrow-up-right-square-fill text-secondary fs-2 me-2"></i>
                             <span>
                                 <p class="m-0 fw-bold">Corporate Level:</p>
-                                Level 10
+                                <span id="corporate-level"></span>
                             </span>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <div class="hero-large-number d-flex align-items-center justify-content-center w-100">
-                            <p class="m-0">10</p>
+                            <p id="vacation-requests-count" class="m-0"></p>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="hero-large-number d-flex align-items-center justify-content-center w-100">
-                            <p class="m-0">12</p>
+                            <p id="leave-requests-count" class="m-0"></p>
                         </div>
                     </div>
                 </div>
